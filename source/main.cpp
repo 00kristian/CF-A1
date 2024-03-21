@@ -196,7 +196,7 @@ void saveVoxelsToObj(const char* outfile)
 int main(int argc, char** argv)
 {
 
-    unsigned int dim = 64; //dimension of voxel grid (e.g. 32x32x32)
+    unsigned int dim = 32; //dimension of voxel grid (e.g. 32x32x32)
 
     //Load OBJ
     if (argc < 3)
@@ -204,7 +204,7 @@ int main(int argc, char** argv)
         std::cout << "Usage: Voxelizer InputMeshFilename OutputMeshFilename \n";
         exit(0);
     }
-
+     
     std::cout << "Load Mesh : " << argv[1] << "\n";
     loadMesh(argv[1], dim);
 
